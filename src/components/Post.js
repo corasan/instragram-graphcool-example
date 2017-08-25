@@ -5,7 +5,6 @@ import {
 } from 'react-relay'
 
 class Post extends React.Component {
-
   render () {
     return (
       <div className='pa3 bg-black-05 ma3'>
@@ -21,6 +20,7 @@ class Post extends React.Component {
           {this.props.post.description}&nbsp;
           <span className='red f6 pointer dim' onClick={this._handleDelete}>Delete</span>
         </div>
+        <h3>{this.props.post.createdAt}</h3>
       </div>
     )
   }
